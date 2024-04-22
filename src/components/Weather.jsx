@@ -13,6 +13,10 @@ export const Weather = () => {
     fetchAPI(city, setWeatherData);
   };
 
+  const weatherIcon = weatherData.weather
+    ? `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`
+    : null;
+
   return (
     <>
       <div className="weatherDetails">
@@ -28,6 +32,9 @@ export const Weather = () => {
         {weatherData.main && (
           <>
             <h2>{weatherData.name}</h2>
+            {weatherIcon && (
+              <img src={weatherIcon} alt={weatherData.weather[0].description} />
+            )}
             <p className="info">Temperature: {weatherData.main.temp}°C</p>
             <p className="info">
               Description: {weatherData.weather[0].description}

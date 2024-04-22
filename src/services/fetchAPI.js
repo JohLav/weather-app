@@ -1,10 +1,14 @@
 export default function fetchAPI(city, setWeatherData) {
+  const apiUrl = import.meta.env.VITE_API_URL;
   const apiKey = import.meta.env.VITE_API_KEY;
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  console.log("apiUrl: ", apiUrl);
+  const generatedApiUrl = `${apiUrl}/weather?q=${city}&appid=${apiKey}&units=metric`;
+  console.log("generatedApiUrl: ", generatedApiUrl);
 
-  fetch(apiUrl)
-    .then((response) => response.json())
+  fetch(generatedApiUrl)
+    .then((response) => {
+      if (!response.ok) throw new Error("Network response was not ok");
+      return response.json();
+    })
     .then((data) => {
       setWeatherData(data);
       console.log(data);
