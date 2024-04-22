@@ -10,9 +10,11 @@ Sujet : Créer une application météo avec ReactJS. Rechercher des villes, d'en
 
 ### Fonctionnalités
 
-- Barre de recherche pour rechercher des villes et afficher les informations météo correspondantes.
-- Bouton pour enregistrer les villes favorites.
-- Liste des villes enregistrées, permettant à l'utilisateur de naviguer entre elles et d'afficher les informations météo mises à jour.
+- [x] Barre de recherche pour rechercher des villes et afficher les informations météo correspondantes.
+- [ ] Bouton pour enregistrer les villes favorites.
+- [ ] Liste des villes enregistrées, permettant à l'utilisateur de naviguer entre elles et d'afficher les informations météo mises à jour.
+- [ ] Prévisions météo sur plusieurs jours : Affichez les prévisions météo sur plusieurs jours (par exemple, 5 ou 7 jours) pour la ville sélectionnée.
+- [ ] Géolocalisation : Récupérez automatiquement la météo de la position actuelle de l'utilisateur en utilisant l'API de géolocalisation du navigateur.
 
 ### Contraintes
 
