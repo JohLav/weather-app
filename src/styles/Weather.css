@@ -1,5 +1,5 @@
 div.weatherDetails {
-  height: 415px;
+  height: fit-content;
 }
 
 form {
@@ -18,4 +18,20 @@ input[type="text"] {
 h2 {
   font-size: 1.2em;
   line-height: 1.1;
+  text-align: center;
+}
+
+div.header {
+  display: flex;
+  align-items: center;
+}
+
+div.main-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+span.temperature {
+  font-size: 2.8em;
 }
