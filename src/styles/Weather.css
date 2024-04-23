@@ -1,5 +1,6 @@
 div.weatherDetails {
-  height: fit-content;
+  height: 350px;
+  width: 425px;
 }
 
 form {
@@ -15,23 +16,67 @@ input[type="text"] {
   margin: 1rem;
 }
 
-h2 {
-  font-size: 1.2em;
-  line-height: 1.1;
-  text-align: center;
-}
-
-div.header {
+.title {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-div.main-data {
+h2 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  padding: 1rem;
+}
+
+button#favorite {
+  padding: 1rem;
+}
+
+.notFavorite {
+  width: 20px;
+  height: 20px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.isFavorite {
+  width: 20px;
+  height: 20px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-data {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0 20px;
 }
 
-span.temperature {
-  font-size: 2.8em;
+.container-el {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.element {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+span {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 0.8em;
+  margin: 0;
 }
