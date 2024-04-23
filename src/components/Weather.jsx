@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/Weather.css";
 import fetchAPI from "../services/fetchAPI.js";
 
-export const Weather = () => {
+export default function Weather() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState({});
   const [isFavorite, setIsFavorite] = useState(city.isFavorite);
@@ -75,4 +75,4 @@ export const Weather = () => {
       )}
     </>
   );
-};
+}
